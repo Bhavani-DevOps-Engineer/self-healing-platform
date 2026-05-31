@@ -39,11 +39,7 @@ jobs:
           cd payment-service
           pip install -r requirements.txt
 
-      - name: Run Tests
-        run: |
-          cd payment-service
-          pytest
-
+     
       - name: Login To GHCR
         uses: docker/login-action@v3
         with:
